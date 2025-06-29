@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Mohan's Portfolio</title>
+  <style>
+    body {
+      background: rgb(16, 12, 8);
+    }
+  </style>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/sticker.webp" alt="Mohan Kumar GM" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mohan Kumar GM">Mohan Kumar GM</h1>
+          <p class="title" style="margin-bottom: 0.3rem;">Full-Stack Developer</p>
+          <p class="title" style="margin-bottom: 0.3rem;">Mobile Application Developer</p>
+                    <p class="title" style="margin-bottom: 0.3rem;">Salesforce Developer</p>
+          <p class="title">Blockchain Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span style="color: #10B981;">Show Contacts</span>
+
+          <ion-icon name="chevron-down" style="color: #10B981;"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+          <ul class="social-list">
+
+          <li class="social-item">
+
+            <a href="https://www.linkedin.com/in/mohankumargm/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin" style="font-size: 3rem;"></ion-icon>
+            </a>
+            </a>
+          </li>
+          <li class="social-item">
+
+            <a href="https://github.com/mohan1019" target="_blank" class="social-link">
+              <ion-icon name="logo-github" style="font-size: 3rem;"></ion-icon>
+            </a>
+            </a>
+          </li>
+          </ul>
+        
+          <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="form-btn" style="border-radius: 25px;">
+            <a href="./assets/files/Mohan_Malleshappa_Resume.pdf" target="_blank"><button class="info-content-cv">
+                <p style="color: #10b981;">View/Download CV</p>
+              </button></a>
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/mail.svg
+                  " alt="design icon" width="33">
+            </div>
+
+            <div class="contact-info" id="email-Info">
+
+              <a target="_top" onclick="copyEmail('mohankumar1019@gmail.com')" href="mailto:mohankumar1019@gmail.com"
+                class="contact-link">mohankumar1019@gmail.com</a>
+            </div>
+
+
+            <div class="contact-info" id="email-Info">
+              <a target="_top" onclick="copyEmail('mg946@njit.edu')" href="mailto:mg946@njit.edu"
+                class="contact-link">mg946@njit.edu</a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            A skilled software engineer driven by a passion for creating innovative solutions. </br>
+            My expertise spans Web , Mobile and Blockchain technologies
+            showcased through a dynamic portfolio of strong education and projects. </br>
+            Let's explore how I can bring value to your team!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="skill">
+
+          <header>
+            <h3 class="h3 skills-title">My skills</h3>
+          </header>
+
+          <ul class="skills-list content-card">
+            <div class="service-container">
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Programming<br>Languages</h4>
+              </div>
+              <button class="skill-hover">
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/java.svg
+                  " alt="design icon" width="25">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Java</h4>
+                  </div>
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/python.svg
+                  " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Python</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/javascript.svg
+                  " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">JavaScript</h4>
+
+                </li>
+              </button>
+            </div>
+          </ul>
+
+          <ul class="skills-list content-card">
+            <div class="service-container">
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Web and Mobile Technologies</h4>
+              </div>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/nodejs.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Node</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/react.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">React</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/phone.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">ReactNative</h4>
+
+                </li>
+              </button>
+            </div>
+          </ul>
+
+          <ul class="skills-list content-card">
+            <div class="service-container">
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Salesforce<br>Technologies</h4>
+              </div>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/apex.png
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Apex</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/lwc.png
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">LWC</h4>
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/soql.png
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">SOQL</h4>
+
+                </li>
+              </button>
+            </div>
+          </ul>
+
+          <ul class="skills-list content-card">
+            <div class="service-container">
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Database<br>Management</h4>
+              </div>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/mysql.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">SQL</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/mongodb.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Mongo</h4>
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/pinecone.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Pinecone</h4>
+
+                </li>
+              </button>
+            </div>
+          </ul>
+
+
+          <ul class="skills-list content-card">
+            <div class="service-container">
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Cloud computing Technologies</h4>
+              </div>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/aws.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">AWS</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/azure.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">AZURE</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/gcp.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">GCP</h4>
+
+                </li>
+              </button>
+            </div>
+          </ul>
+
+          <ul class="skills-list content-card">
+            <div class="service-container">
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Blockchain <br>Technologies</h4>
+              </div>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/solidity.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Solidity</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/web3.png
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Web3.js</h4>
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/hardhat.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">HardHat</h4>
+
+                </li>
+              </button>
+            </div>
+          </ul>
+
+          <ul class="skills-list content-card">
+            <div class="service-container">
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Application <br>Software</h4>
+              </div>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/git.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Git</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/xcode.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">XCode</h4>
+
+                </li>
+              </button>
+              <button class="skill-hover">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/android.svg
+                " alt="design icon" width="30">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h5 service-item-title">Android Studio</h4>
+                </li>
+              </button>
+            </div>
+          </ul>
+
+
+          </ul>
+
+        </section>
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="experience">
+
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="bookmark-outline" style="font-size: 1.6rem; color: #10B981;"></ion-icon>
+            </div>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer Intern</h4>
+              <span>Sitetracker</span>
+              <span>Location : New Jersey , USA</span> </br>
+              <span>May 2024 — May 2025 · 12 months</span>
+              <ul>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Engineered a production tracking feature by integrating advanced SQL optimizations,</p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">backend workflow redesign, and dynamic UI components, improving data retrieval speed by 30% </li>
+                <li class="each-content" style="margin-left: 2rem;">and accelerating product lifecycle and design decision-making.</li></br>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Built a core feature for the React datatable, making it a scalable reusable framework </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">adopted by 40% of Sitetracker’s product. </li>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Triaged and resolved 35+ customer issues across QA orgs by performing root cause analysis </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">and delivering code fixes within SLA timeframes, reducing turnaround time by 25%</li>
+                <li class="each-content" style="margin-left: 2rem;">through adherence to SDLC processes.</li>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Developed a comprehensive React Native duty roster module, introducing a progressive </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">calendar-based job to automate shift assignments, resource allocation, and troubleshooting </li>
+                <li class="each-content" style="margin-left: 2rem;">workflows, projected to improve workforce productivity by 40%.</li></br>
+                                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Refactored a project scheduling engine using Apex batch processing, improving </p>
+                                  <li class="each-content" style="margin-left: 2rem;">execution performance by 20%.</li></br>
+                </li>
+              </ul>
+  
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Assistant | NJIT</h4>
+              <span>NeuroTechR3</span>
+              <span>Location : New Jersey , USA</span> </br>
+              <span>Aug 2024 - Jan 2025 · 6 months</span>
+              <ul>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Crafted a scalable Flask-based Chatbot API , processing 10k+ daily document and user queries </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">using RAG with Pinecone and NoSQL via DynamoDB, improving 80% response accuracy while</li>
+                <li class="each-content" style="margin-left: 2rem;">ensuring HIPAA compliance data privacy.</li></br>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Devised a LangChain powered input classification system that converts natural language into </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">aggregation pipeline queries, reducing latency by 40% through intelligent RAG and NoSQL </li>
+                <li class="each-content" style="margin-left: 2rem;">routing of user requests.</li></br>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Collaborated with cross-functional teams to develop a real-time responsive graph generation</p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">system using Matplotlib for progress visualization, integrating AWS S3 storage.</br>
+              </ul>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Full Stack Software Developer</h4>
+              <span>Cognitive Clouds</span>
+              <span>Location : Bangalore , India</span> </br>
+              <span>Aug 2022 — Jun 2023 · 12 months</span>
+              <ul>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Designed a cross-platform mobile application using React Native (TypeScript), Node.js, </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">and MongoDB, featuring real-time appointment scheduling, push notifications ( FCM for Android and</li>
+                <li class="each-content" style="margin-left: 2rem;">APNs in IOS ) and reducing service booking time by 60%.</li></br>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Integrated real-time messaging functionality using Quikblox API and implemented secure payment </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">processing via Hyperpay Gateway, ensuring seamless communication and consistent financial </li>
+                <li class="each-content" style="margin-left: 2rem;">transactions while reducing transaction failures by 25%..</li> </br>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Sustained 90%+ test coverage with Jest.js via CI/CD pipelines, reducing production bugs </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">and maintaining code quality.</li> </br>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer Intern</h4>
+              <span>Freight Deck</span>
+
+              <span>Jan 2022 - Mar 2022 · 3 months</span>
+              <span>Location : Bangalore , India</span> </br>
+              <ul>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Crafted microservices based data ingestion logic to capture and handle high-velocity </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;"> delivery logs using Apache Spark,Hadoop.</li></br>
+
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content">Restructured backend with FastAPI and RabbitMQ, boosting logistics visibility by 60% </p>
+                  <li class="each-content" style="margin-left: 2rem;">through async workflow optimization.</li></br>
+                </li>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer Intern</h4>
+              <span>Bytematic IT Solutions</span>
+
+              <span>Jan 2021 - Jun 2021 · 6 mos</span>
+              <span>Technologies : React · JavaScript · SQL · PHP · Node.js </span> </br>
+              <ul>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content"> Played a pivotal role in the 'Inventory Management System' project, an initiative
+                    that streamlined </p>
+                </li>
+                <li class="each-content" style="margin-left: 2rem;">the tracking of procurement,
+                  production, and sales of goods. Within the project scope,</li>
+                <li class="each-content" style="margin-left: 2rem;">actively developed features encompassing checklist
+                  integration,
+                  purchase management,</li>
+                <li class="each-content" style="margin-left: 2rem;">supplier management, and comprehensive inventory
+                  reporting</li>
+              </ul>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Teaching Assistant for Web System Development</h4>
+              <span>New Jersey Institute of Technology</span>
+
+              <span>Jan 2024 - May 2025 · 18 months</span>
+              <span>Technologies : HTML · CSS · Javascript · Django · Docker · MongoDB </span> </br>
+              <ul>
+                <li class="each-content"><ion-icon class="arrow-icon" name="chevron-forward-circle-outline"></ion-icon>
+                  <p class="content"> Assisted in teaching, grading, and mentoring students in web technologies.</p>
+                </li>
+              </ul>
+
+            </li>
+
+          </ol>
+
+        </section>
+        </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+            </button>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-category="web development">
+              <a href="https://github.com/mohan1019/Neuro-Tech-Chatbot" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" class="eyeIcon"></ion-icon>
+                  </div>
+                  <img src="./assets/images/chatbot.jpg" alt="finance" loading="lazy">
+                  </button>
+                </figure>
+
+                <h3 class="project-title">NeuroTech R3 Chatbot</h3>
+
+                <p class="project-category">AI and Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-category="web development">
+              <a href="https://github.com/mohan1019/Healthy-Eating-Plate" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" class="eyeIcon"></ion-icon>
+                  </div>
+                  <img src="./assets/images/health.jpeg" alt="finance" loading="lazy">
+                  </button>
+                </figure>
+
+                <h3 class="project-title">Healthy Eating Plate</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-category="web development">
+              <a href="#" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" class="eyeIcon"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/blockchain.webp" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FTM Mint</h3>
+
+                <p class="project-category">Blockchain development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-category="web development">
+              <a href="https://github.com/mohan1019/Payroll-Managment-System" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box" target="_blank">
+                    <ion-icon name="eye-outline" class="eyeIcon"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/payroll.jpeg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Payroll Management</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-category="web development">
+              <a href="https://github.com/mohan1019/Visvesvaraya-Stock-Exchange" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" class="eyeIcon"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/stock.webp" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Visveswaraya Stock Exchange</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="resume" data-page="education">
+
+        <header>
+          <h2 class="h2 article-title">Education</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline" style="color: #10B981;"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New Jersey Institute Of Technology</h4>
+              <div style="display: flex;">
+                <span> Aug 2023 - </span>
+                <span class="present"> May 2025</span>
+                
+              </div>
+              <span>New Jersey , United States</span>
+              <p class="timeline-text">
+                Master Of Science - Computer Science
+                <br>
+                Grade : 3.80 / 4.00 GPA
+                </br>
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sir M Visvesvaraya Institute Of Technology</h4>
+
+              <span>Aug 2018 - June 2022</span>
+              <span>Bangalore , India</span>
+              <p class="timeline-text">
+                Bachelor of Engineering - Computer Science
+                <br>
+                Grade : 3.73 / 4.00 GPA
+                </br>
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Hymamshu Jyothi Kala Peeta</h4>
+
+              <span>Aug 2016 - May 2018</span>
+              <span>Bangalore , India</span>
+
+              <p class="timeline-text">
+                Pre-University
+                <br>
+                Percentage : 95.4%
+                </br>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" id="name" class="form-input" placeholder="Full name" required
+                data-form-input>
+
+              <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required
+                data-form-input>
+            </div>
+
+            <textarea name="message" id="message" class="form-input" placeholder="Your Message" required
+              data-form-input></textarea>
+
+            <button class="form-btn" type="button" onclick="submitForm()" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+            <span class="messageCheck" id="success">Message sent successfully!</span>
+            <span class="messageCheck" id="fail">Message not sent,<br>Please try again.</span>
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

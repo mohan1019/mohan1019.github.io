@@ -1,8 +1,5 @@
-# vCard - Personal portfolio
+#  Mohan Malleshappa portfolio
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+https://mohan1019.github.io/
 
-## License
 
-This project is **free to use** and does not contains any license.
-# Portfolio.github.io
